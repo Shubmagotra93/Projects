@@ -1,0 +1,48 @@
+Git:  Distributed Version Control System
+Git hub: Online platform to manage repositories
+
+Steps:
+
+1. Download Git and check git --version
+2. Add Project to git(Create files/folders) using <git init> command
+3. Use Git Command accordingly:
+
+	git config --global user.email "shubmagotra93@gmail.com"
+	git config --global user.name "shubmagotra93"
+
+	git config --list - View All Configurations Combined
+	git config --list --show-origin - Identify the Configuration File Paths - /home/shubham/.gitconfig
+	
+	
+	git clone "repo url" 
+	git init
+	git status
+	git add
+	git commit -m "add message here"
+	git remote add origin https://github.com/Shubmagotra93/Repo2.git
+	git push -u origin master
+	git pull - fetches all data from remote
+
+	Create branch:
+		git branch "branch name"   //dont use quotes
+	checkout branch:
+		git checkout "branch name"
+	create and checkout branch at once:
+		git checkout -b "branch name"
+	merge branch to master:
+		first checkout to master branch
+		git merge "branch name"
+		
+		after merge need to push changes to remote
+		git push origin master
+		
+	Rename branch name:
+		First checkout to branch you want to rename 
+		git branch -M new_name
+	
+		
+	delete branch:
+		git branch -d "branch name"    --local repo
+		git push origin --delete "branch name"  ---remote repo
+
+

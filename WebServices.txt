@@ -1,0 +1,65 @@
+WebServices:
+	Services available over web
+	enables communications between two application
+	and provides std protocol/format for communications
+	
+Why we use:
+	platform independent communiaction:
+		app in C++ over windows platform
+		 and app java over linux platform
+	these two application talk with each other using webservices
+
+working of web services: 
+if we say services on web, there has to be someone which provides theses services
+Yes, we call this as Service Provider or we call it Server
+service provider  develops and implemnte and make it avaible the internet
+
+if provider is there, then there should be consumer: Client 
+Client sends the request to server and server/service provider gives the response
+
+To enable this commnication:
+	we need two thing: medium and format
+	example of phone: phone is medium and format is common languauge both can understand
+	medium - HTTP/ Internet
+	Format - xml/json
+	
+Web services implements in two types:
+1. SOAP: Simple Object Access Protocol
+		Medium : HTTP (POST) - always send in post
+		Format: XML
+		
+2. REST : REpresentational State Transfer
+		Medium : HTTP (POST, get, patch) - use all methods
+		Format: XML, JSON/Text
+		
+REST: 
+It is a architecture
+follows set of priinciples
+Resource: everything is a resource like employee/dept
+URI: any resource/data can be accessed by URI
+	http://example/employee/10
+HTTP: http has some methods like GET, POST, PUT
+We use explicit use of methods
+Using HTTP methods along with URI, we can access and modify any resouce/information
+
+Statelessness: 
+
+	Server should not require to store the state of a session
+	if the concept of as session is required, all info should be stored at client side and sent with every subsequent request
+	this make every request from client independent and a complete entity itself
+	due to statelessness performace improces as there is no overhead of storing at server end
+
+Caching:
+	happens at client side
+	when server gives response, it conatins some meta data(like data in headers) as well along with actual data which tells the client whether client has to store the respone locally/cache response at his end or not
+	Cache-control Header and Last Modified Header: client use the cache-control header to deteremine whether to cache the resource(make local copy) or not
+	
+Layering:
+	there can be many layers (intermedatires) between client and server. These are HTTP intermedatires.
+	can be used for message translations/improving performnace with caching etc..
+
+An API is designed to expose certain aspects of an application's business logic on a server, and SOAP uses a service interface to do this while REST uses URIs.
+	
+	
+
+

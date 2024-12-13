@@ -1,0 +1,9 @@
+How to generate HTML reports:
+Step:
+1. Install > pip install pytest-html
+2. Use pytest --html=report.html to generate reports
+3. pytest -k "test_loginpage" --html=reports/screenhot.html
+
+-k "test_loginpage" is used to run specific test case
+reports is a folder and if we do not add folder name like 
+--html=screenhot.html, then screenhot will be saved in tests folder.
